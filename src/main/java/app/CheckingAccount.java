@@ -2,21 +2,21 @@ package app;
 
 class CheckingAccount
 {
-    private Account account;
+    private AccountValue accountValue;
 
     CheckingAccount(long amount)
     {
-        account = new Account(amount);
+        accountValue = new AccountValue(amount);
     }
 
     void withdraw(long amount)
     {
-        account.withdraw(amount);
+        accountValue.decrease(amount);
     }
 
     void deposit(long amount)
     {
-        account.deposit(amount);
+        accountValue.increase(amount);
     }
 
     String getName()
@@ -26,6 +26,6 @@ class CheckingAccount
 
     long getAmount()
     {
-        return account.getAmount();
+        return accountValue.getAmount();
     }
 }

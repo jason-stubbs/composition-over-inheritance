@@ -2,16 +2,16 @@ package app;
 
 class SavingsAccount
 {
-    private Account account;
+    private AccountValue accountValue;
 
     SavingsAccount(long amount)
     {
-        account = new Account(amount);
+        accountValue = new AccountValue(amount);
     }
 
     void deposit(long amount)
     {
-        account.deposit(amount);
+        accountValue.increase(amount);
     }
 
     String getName()
@@ -21,6 +21,6 @@ class SavingsAccount
 
     long getAmount()
     {
-        return account.getAmount();
+        return accountValue.getAmount();
     }
 }

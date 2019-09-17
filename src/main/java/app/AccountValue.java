@@ -1,20 +1,20 @@
 package app;
 
-class Account
+class AccountValue
 {
     private long amount;
 
-    Account(long amount)
+    AccountValue(long amount)
     {
         this.amount = amount;
     }
 
-    void deposit(long amount)
+    void increase(long amount)
     {
         this.amount += amount;
     }
 
-    void withdraw(long amount)
+    void decrease(long amount)
     {
         this.amount -= amount;
     }
