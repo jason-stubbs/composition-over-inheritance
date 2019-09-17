@@ -1,6 +1,6 @@
 package app;
 
-class SavingsAccount implements IAccountBalance
+class SavingsAccount implements AccountWithBalance
 {
     private AccountValue accountValue;
 
