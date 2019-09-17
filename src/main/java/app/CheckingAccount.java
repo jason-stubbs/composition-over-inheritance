@@ -11,7 +11,7 @@ class CheckingAccount
 
     void withdraw(long amount)
     {
-        setAmount(getAmount() - amount);
+        account.setAmount(getAmount() - amount);
     }
 
     void deposit(long amount)
@@ -27,10 +27,5 @@ class CheckingAccount
     long getAmount()
     {
         return account.getAmount();
-    }
-
-    void setAmount(long amount)
-    {
-        account.setAmount(amount);
     }
 }

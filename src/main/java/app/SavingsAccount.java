@@ -23,9 +23,4 @@ class SavingsAccount
     {
         return account.getAmount();
     }
-
-    void setAmount(long amount)
-    {
-        account.setAmount(amount);
-    }
 }
