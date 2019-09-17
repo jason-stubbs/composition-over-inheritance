@@ -19,7 +19,7 @@ class SavingsAccount
         return "savings";
     }
 
-    long getAmount()
+    long getBalance()
     {
         return accountValue.getAmount();
     }

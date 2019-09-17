@@ -24,7 +24,7 @@ class CheckingAccount
         return "checking";
     }
 
-    long getAmount()
+    long getBalance()
     {
         return accountValue.getAmount();
     }
