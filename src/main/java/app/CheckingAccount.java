@@ -11,7 +11,7 @@ class CheckingAccount
 
     void withdraw(long amount)
     {
-        account.setAmount(getAmount() - amount);
+        account.withdraw(amount);
     }
 
     void deposit(long amount)

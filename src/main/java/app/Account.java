@@ -14,6 +14,11 @@ class Account
         this.amount += amount;
     }
 
+    void withdraw(long amount)
+    {
+        this.amount -= amount;
+    }
+
     long getAmount()
     {
         return amount;
