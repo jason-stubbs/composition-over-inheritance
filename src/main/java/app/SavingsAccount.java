@@ -1,6 +1,6 @@
 package app;
 
-class SavingsAccount
+class SavingsAccount implements IAccountBalance
 {
     private AccountValue accountValue;
 
@@ -14,12 +14,12 @@ class SavingsAccount
         accountValue.increase(amount);
     }
 
-    String getName()
+    public String getName()
     {
         return "savings";
     }
 
-    long getBalance()
+    public long getBalance()
     {
         return accountValue.getAmount();
     }

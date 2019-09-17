@@ -1,6 +1,6 @@
 package app;
 
-class CheckingAccount
+class CheckingAccount implements IAccountBalance
 {
     private AccountValue accountValue;
 
@@ -19,12 +19,12 @@ class CheckingAccount
         accountValue.increase(amount);
     }
 
-    String getName()
+    public String getName()
     {
         return "checking";
     }
 
-    long getBalance()
+    public long getBalance()
     {
         return accountValue.getAmount();
     }
