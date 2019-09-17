@@ -6,7 +6,7 @@ class Account
 
     Account(long amount)
     {
-        setAmount(amount);
+        this.amount = amount;
     }
 
     void deposit(long amount)
@@ -22,10 +22,5 @@ class Account
     long getAmount()
     {
         return amount;
-    }
-
-    void setAmount(long amount)
-    {
-        this.amount = amount;
     }
 }
