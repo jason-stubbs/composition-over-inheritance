@@ -6,7 +6,7 @@ class CheckingAccount
 
     CheckingAccount(long amount)
     {
-        account = new Account("checking", amount);
+        account = new Account(amount);
     }
 
     void withdraw(long amount)
@@ -21,7 +21,7 @@ class CheckingAccount
 
     String getName()
     {
-        return account.getName();
+        return "checking";
     }
 
     long getAmount()

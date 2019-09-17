@@ -6,7 +6,7 @@ class SavingsAccount
 
     SavingsAccount(long amount)
     {
-        account = new Account("savings", amount);
+        account = new Account(amount);
     }
 
     void deposit(long amount)
@@ -16,7 +16,7 @@ class SavingsAccount
 
     String getName()
     {
-        return account.getName();
+        return "savings";
     }
 
     long getAmount()
